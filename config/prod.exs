@@ -2,8 +2,8 @@ use Mix.Config
 
 config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "https://vast-sea-45830.herokuapp.com/", port: 443],
-  secret_key_base: System.get_env("85dqpam5EiZz3pTb+PzxcST5m2CBZtQautMzS9mrtIZ6wYsL2x8JOs9vYT9d2htY"),
+  url: [host: "https://nameless-falls-45512.herokuapp.com/", port: 443],
+  secret_key_base: System.get_env("ePgYNZ6CYWSkhN/YmR10Q78orMwTq5jDCmeg23VFHTlF2AMc8MkoF1GOMGfG8HNd"),
   cache_static_manifest: "priv/static/manifest.json"
 
 config :peepchat, Peepchat.Repo,
