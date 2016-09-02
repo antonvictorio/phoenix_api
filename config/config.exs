@@ -1,4 +1,4 @@
-# This file is responsible for configuring your application
+# This file is responsible for `uring your application
 # and its dependencies with the aid of the Mix.Config module.
 #
 # This configuration file is loaded before any dependency and
@@ -31,5 +31,15 @@ config :phoenix, :format_encoders,
 config :plug, :mimes, %{
   "application/vnd.api+json" => ["json-api"]
 }
+
+
+config :guardian, Guardian,
+  allowed_algos: ["HS512"], # optional
+  verify_module: Guardian.JWT,  # optional
+  issuer: "Peepchat",
+  ttl: { 30, :days },
+  verify_issuer: true, # optional
+  secret_key: "aiquQD4jjMKkdJKVWRcIw6NlJd4gMWBDvaQxmcyiqm8OWmgdJOYgJDRg3taU5x0g",
+  serializer: Peepchat.GuardianSerializer
 
 import_config "#{Mix.env}.exs"
