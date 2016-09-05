@@ -8,8 +8,8 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :peepchat, Peepchat.Endpoint,
   http: [port: 4000],
-  debug_errors: true,
   code_reloader: true,
+  debug_errors: true,
   check_origin: false,
   watchers: []
 

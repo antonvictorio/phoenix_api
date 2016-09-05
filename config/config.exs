@@ -39,7 +39,7 @@ config :guardian, Guardian,
   issuer: "Peepchat",
   ttl: { 30, :days },
   verify_issuer: true, # optional
-  secret_key: "aiquQD4jjMKkdJKVWRcIw6NlJd4gMWBDvaQxmcyiqm8OWmgdJOYgJDRg3taU5x0g",
+  secret_key: "muqt3jZKkVrYJ0m9+wSaqfjzK3Eh6xwmjnLWYjZwDGqemakKmBtLsBI4GjRdUH8O",
   serializer: Peepchat.GuardianSerializer
 
 import_config "#{Mix.env}.exs"
