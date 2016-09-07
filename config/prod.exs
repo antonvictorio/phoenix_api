@@ -8,7 +8,8 @@ config :peepchat, Peepchat.Endpoint,
 
 config :peepchat, Peepchat.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: System.get_env("postgres://bxouuucjmhlhab:W8UErdh_IOUqjhxdXjq7vApN-H@ec2-174-129-223-35.compute-1.amazonaws.com:5432/de3e8aprn5k39d"),
+  #url: System.get_env("postgres://bxouuucjmhlhab:W8UErdh_IOUqjhxdXjq7vApN-H@ec2-174-129-223-35.compute-1.amazonaws.com:5432/de3e8aprn5k39d"),
+  url: System.get_env("postgres://yrhfashceavqbn:I8g21lwIhlVUawyYtZUP7DUnwc@ec2-54-163-239-12.compute-1.amazonaws.com:5432/d310gr91tcc3lo"),
   pool_size: 20
 
 # Do not print debug messages in production
