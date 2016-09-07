@@ -2,7 +2,7 @@ use Mix.Config
 
 config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "https://nameless-falls-45512.herokuapp.com/", port: 443],
+  url: [scheme: "https", host: "obscure-ocean-19966.herokuapp.com/", port: 443],
   secret_key_base: System.get_env("ePgYNZ6CYWSkhN/YmR10Q78orMwTq5jDCmeg23VFHTlF2AMc8MkoF1GOMGfG8HNd"),
   cache_static_manifest: "priv/static/manifest.json"
 
