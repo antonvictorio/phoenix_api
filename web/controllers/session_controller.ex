@@ -71,6 +71,13 @@ defmodule Peepchat.SessionController do
     ## Handle unknown grant type
     throw "Unsupported grant_type"
   end
+
+  def index(conn, _params) do
+    # Return some static JSON for now
+    conn
+    |> json(%{status: "Ok"})
+  end
+
 end
 
 
