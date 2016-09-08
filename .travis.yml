@@ -11,6 +11,6 @@ before_script:
 deploy:
   provider: heroku
   api_key: 5e4487c8-0322-4407-b202-2a44334aa94c
-  app: radiant-crag-90533
+  app: shrouded-coast-35402
   on:
     repo: antonvictorio/phoenix_api
